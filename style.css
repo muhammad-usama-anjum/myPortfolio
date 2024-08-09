@@ -206,22 +206,35 @@ body, html {
 .skill-list {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  text-decoration: none;
 }
 
 .skill-item {
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
   margin: 10px;
   color: #fff;
   background-color: #1a1a1a;
   border-radius: .5rem;
-  align-items: center;
-  padding: 1rem 2rem 1rem 3rem;
+  border: 0px;
+  padding: 0.7rem;
   font-size: 1.5rem;
   font-weight: 300;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
 }
+
+a{
+  text-decoration: none;
+}
+
 
 .skill-item:hover {
   animation: pulse 0.5s ease-in-out forwards;
